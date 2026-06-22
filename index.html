@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Moisés Pérez — Full-stack developer</title>
+  <meta name="description" content="Moisés Pérez — full-stack developer with a backend/data lean. Sole developer at an accounting firm, shipping real products to production with React, TypeScript, Python and FastAPI." />
+  <meta name="author" content="Moisés Pérez Aello" />
+
+  <!-- Open Graph / social -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Moisés Pérez — Full-stack developer" />
+  <meta property="og:description" content="I ship real products to production — not just prototypes." />
+  <meta property="og:url" content="https://moisespaello.dev" />
+  <meta property="og:locale" content="en_US" />
+
+  <link rel="canonical" href="https://moisespaello.dev" />
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" />
+  <link rel="stylesheet" href="styles/main.css" />
+
+  <!-- Set theme before paint to avoid a flash of the wrong theme -->
+  <script>
+    (function () {
+      try {
+        var stored = localStorage.getItem('theme');
+        var theme = stored || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+        document.documentElement.dataset.theme = theme;
+      } catch (e) {}
+    })();
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <nav class="nav" aria-label="Primary">
+      <a class="brand" href="#top" aria-label="Moisés Pérez — home">
+        <span class="brand__mark" aria-hidden="true">MP</span>
+        <span class="brand__name">Moisés Pérez</span>
+      </a>
+      <ul class="nav__links">
+        <li><a href="#work">Work</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="theme-toggle" type="button" aria-label="Toggle color theme" aria-pressed="false">
+        <svg class="theme-toggle__icon theme-toggle__icon--sun" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="12" cy="12" r="4" />
+          <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41" />
+        </svg>
+        <svg class="theme-toggle__icon theme-toggle__icon--moon" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
+        </svg>
+      </button>
+    </nav>
+  </header>
+
+  <main id="main">
+    <span id="top"></span>
+
+    <!-- Hero -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="container">
+        <p class="hero__eyebrow">Full-stack developer · backend &amp; data lean</p>
+        <h1 id="hero-title" class="hero__title">
+          I ship real products to production —<br />
+          <span class="accent">not just prototypes.</span>
+        </h1>
+        <p class="hero__lead">
+          I'm Moisés Pérez, the sole developer at an accounting firm in Hermosillo,
+          Mexico. I own the full cycle — design, build, deploy, maintain — and turn
+          manual business workflows into software people use every day.
+        </p>
+        <div class="hero__cta">
+          <a class="btn btn--primary" href="https://github.com/moisesPAello" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" fill="currentColor"><path d="M12 .5C5.73.5.5 5.74.5 12.02c0 5.1 3.29 9.42 7.86 10.95.58.1.79-.25.79-.56 0-.27-.01-1.16-.02-2.1-3.2.7-3.88-1.36-3.88-1.36-.52-1.33-1.28-1.69-1.28-1.69-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.2 1.77 1.2 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.56-.29-5.26-1.28-5.26-5.7 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11 11 0 0 1 5.79 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.24 2.76.12 3.05.74.81 1.18 1.84 1.18 3.1 0 4.43-2.7 5.41-5.27 5.69.41.36.78 1.06.78 2.14 0 1.55-.01 2.79-.01 3.17 0 .31.21.67.8.56A11.53 11.53 0 0 0 23.5 12.02C23.5 5.74 18.27.5 12 .5z"/></svg>
+            GitHub
+          </a>
+          <a class="btn" href="https://linkedin.com/in/moises-perez" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" fill="currentColor"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.13 1.45-2.13 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.07 2.07 0 1 1 0-4.14 2.07 2.07 0 0 1 0 4.14zM7.12 20.45H3.55V9h3.57v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg>
+            LinkedIn
+          </a>
+          <a class="btn" href="mailto:moisesperezaello@gmail.com">
+            <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg>
+            Email
+          </a>
+          <a class="btn btn--ghost" href="assets/cv/moises-perez-cv.pdf" download>
+            <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="M7 10l5 5 5-5"/><path d="M12 15V3"/></svg>
+            Download CV
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="section" aria-labelledby="about-title">
+      <div class="container">
+        <p class="section__label">About</p>
+        <h2 id="about-title" class="section__title">From manual workflow to shipped software</h2>
+        <div class="about">
+          <p>
+            I'm an Information Systems Engineering student at UNISON (6th semester,
+            graduating 2027) and, since July 2025, the sole software developer at JGRP,
+            an accounting firm. I sit with accountants, map the manual processes they
+            repeat by hand, and turn them into tools they rely on daily.
+          </p>
+          <p>
+            That means I own the whole cycle: gathering requirements, designing,
+            building, deploying on an internal server, and maintaining it in production.
+            I work full-stack with a backend and data lean — React and TypeScript on the
+            front, Python and FastAPI on the back, Docker to ship it.
+          </p>
+          <p>
+            I use AI coding tools — Claude Code, GitHub Copilot, opencode — actively in
+            my daily workflow, and I think about the meta-level of how AI-assisted
+            development should be structured. I'm early in my career, but the proof is
+            real software with real users.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Work -->
+    <section id="work" class="section section--alt" aria-labelledby="work-title">
+      <div class="container">
+        <p class="section__label">Selected work</p>
+        <h2 id="work-title" class="section__title">Things I've shipped</h2>
+
+        <!-- Sella Cruce (flagship) -->
+        <article class="project project--flagship">
+          <div class="project__body">
+            <header class="project__header">
+              <span class="badge badge--live">In daily production use</span>
+              <h3 class="project__name">Sella Cruce</h3>
+              <p class="project__tagline">Bank-statement reconciliation, automated.</p>
+            </header>
+
+            <div class="project__detail">
+              <h4>The problem</h4>
+              <p>
+                The team reconciled bank statements by hand — cross-checking every
+                movement in a bank's PDF statement against an Excel of expected
+                transactions, line by line. Slow, and easy to miss a match.
+              </p>
+              <h4>What I built</h4>
+              <p>
+                A web app that ingests the bank PDF and the expected-transactions Excel,
+                cross-references the movements, and marks the matches automatically. I
+                designed it around the exact manual process the team already used, so it
+                fit their workflow on day one.
+              </p>
+              <h4>Outcome</h4>
+              <p>
+                In daily production use at JGRP by real users, running containerized on
+                an internal server. I own it end to end — design, development,
+                deployment, and ongoing maintenance.
+              </p>
+            </div>
+
+            <ul class="project__stack" aria-label="Technology stack">
+              <li>React</li>
+              <li>TypeScript</li>
+              <li>Python</li>
+              <li>FastAPI</li>
+              <li>Docker</li>
+            </ul>
+            <p class="project__note">
+              Internal, proprietary tool handling client financial data — no public repo
+              or demo. Shown here as a case study.
+            </p>
+          </div>
+
+          <figure class="project__figure" aria-labelledby="sella-diagram-caption">
+            <svg class="arch-diagram" viewBox="0 0 320 260" role="img" aria-labelledby="sella-diagram-title sella-diagram-desc">
+              <title id="sella-diagram-title">Sella Cruce architecture</title>
+              <desc id="sella-diagram-desc">A bank PDF statement and an expected-transactions Excel feed into a FastAPI backend, which cross-checks movements and returns marked matches to a React frontend, all running in Docker on an internal server.</desc>
+              <!-- inputs -->
+              <g class="ad-node">
+                <rect x="12" y="20" width="120" height="40" rx="8"/>
+                <text x="72" y="38">Bank PDF</text>
+                <text x="72" y="52" class="ad-sub">statement</text>
+              </g>
+              <g class="ad-node">
+                <rect x="12" y="80" width="120" height="40" rx="8"/>
+                <text x="72" y="98">Excel</text>
+                <text x="72" y="112" class="ad-sub">expected txns</text>
+              </g>
+              <!-- backend -->
+              <g class="ad-node ad-node--accent">
+                <rect x="180" y="50" width="128" height="44" rx="8"/>
+                <text x="244" y="68">FastAPI</text>
+                <text x="244" y="82" class="ad-sub">parse &amp; cross-check</text>
+              </g>
+              <!-- frontend -->
+              <g class="ad-node">
+                <rect x="180" y="150" width="128" height="44" rx="8"/>
+                <text x="244" y="168">React + TS</text>
+                <text x="244" y="182" class="ad-sub">marked matches</text>
+              </g>
+              <!-- docker wrap -->
+              <rect class="ad-wrap" x="160" y="34" width="148" height="180" rx="12"/>
+              <text class="ad-wrap-label" x="234" y="228">Docker · internal server</text>
+              <!-- arrows -->
+              <path class="ad-edge" d="M132 40 H180" marker-end="url(#arr)"/>
+              <path class="ad-edge" d="M132 100 H156 V72 H180" marker-end="url(#arr)"/>
+              <path class="ad-edge" d="M244 94 V150" marker-end="url(#arr)"/>
+              <defs>
+                <marker id="arr" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+                  <path d="M0 0 L10 5 L0 10 z"/>
+                </marker>
+              </defs>
+            </svg>
+            <figcaption id="sella-diagram-caption">How Sella Cruce reconciles a statement.</figcaption>
+          </figure>
+        </article>
+
+        <div class="project-grid">
+          <!-- Financial analysis module -->
+          <article class="project project--compact">
+            <header class="project__header">
+              <span class="badge">Case study · internal</span>
+              <h3 class="project__name">Financial analysis module</h3>
+              <p class="project__tagline">Normalizing messy ERP exports into clean data.</p>
+            </header>
+            <p>
+              A Python (pandas) module that processes and normalizes inconsistent
+              trial-balance exports from the CONTPAQi and Aspel accounting ERPs. It
+              parses, normalizes, and runs data-quality checks so the data stays
+              consistent across clients — extraction, parsing, normalization, validation,
+              ETL-style.
+            </p>
+            <ul class="project__stack" aria-label="Technology stack">
+              <li>Python</li>
+              <li>pandas</li>
+              <li>Data quality</li>
+            </ul>
+            <p class="project__note">Internal tool at JGRP — no public repo.</p>
+          </article>
+
+          <!-- method-based-harness -->
+          <article class="project project--compact">
+            <header class="project__header">
+              <span class="badge badge--oss">Open source · early-stage</span>
+              <h3 class="project__name">method-based-harness</h3>
+              <p class="project__tagline">Software methodology for agentic coding.</p>
+            </header>
+            <p>
+              A Python CLI that applies software-engineering methodology to agentic
+              coding harnesses — it injects "methodology packs" into a repo as native
+              Claude Code files. It's meta: an exploration of <em>how</em> AI-assisted
+              development should be structured, not just that I use the tools. Functional
+              today and runs best in Claude Code; opencode and Copilot support is planned.
+            </p>
+            <ul class="project__stack" aria-label="Technology stack">
+              <li>Python</li>
+              <li>CLI</li>
+              <li>Claude Code</li>
+            </ul>
+            <a class="project__link" href="https://github.com/moisesPAello/method-based-harness" target="_blank" rel="noopener">
+              View on GitHub
+              <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M7 7h10v10"/></svg>
+            </a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="section" aria-labelledby="skills-title">
+      <div class="container">
+        <p class="section__label">Skills</p>
+        <h2 id="skills-title" class="section__title">What I work with</h2>
+        <div class="skills">
+          <div class="skill-group">
+            <h3>Languages</h3>
+            <ul><li>Python</li><li>TypeScript</li><li>JavaScript (ES6+)</li><li>Java</li><li>SQL</li></ul>
+          </div>
+          <div class="skill-group">
+            <h3>Frontend</h3>
+            <ul><li>React</li><li>HTML5</li><li>CSS3</li><li>Responsive design</li></ul>
+          </div>
+          <div class="skill-group">
+            <h3>Backend</h3>
+            <ul><li>FastAPI</li><li>REST APIs</li><li>Async data handling</li></ul>
+          </div>
+          <div class="skill-group">
+            <h3>Data</h3>
+            <ul><li>pandas</li><li>Extraction &amp; parsing</li><li>Normalization</li><li>Data-quality checks</li></ul>
+          </div>
+          <div class="skill-group">
+            <h3>Databases</h3>
+            <ul><li>SQL</li><li>SQLite</li></ul>
+          </div>
+          <div class="skill-group">
+            <h3>DevOps &amp; tools</h3>
+            <ul><li>Docker</li><li>Git / GitHub</li><li>CI/CD</li><li>n8n</li></ul>
+          </div>
+          <div class="skill-group">
+            <h3>AI engineering tools</h3>
+            <ul><li>Claude Code</li><li>GitHub Copilot</li><li>opencode</li><li>Ollama (experiment)</li></ul>
+          </div>
+          <div class="skill-group">
+            <h3>Analysis</h3>
+            <ul><li>UML</li><li>Requirements gathering</li></ul>
+          </div>
+          <div class="skill-group">
+            <h3>Spoken</h3>
+            <ul><li>Spanish (native)</li><li>English (B1–B2)</li></ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section section--alt" aria-labelledby="contact-title">
+      <div class="container">
+        <p class="section__label">Contact</p>
+        <h2 id="contact-title" class="section__title">Let's talk</h2>
+        <p class="contact__lead">
+          Open to full-stack, backend/Python, and analyst roles — in Mexico and remote
+          across LATAM. The fastest way to reach me is email.
+        </p>
+        <ul class="contact__links">
+          <li><a href="mailto:moisesperezaello@gmail.com">moisesperezaello@gmail.com</a></li>
+          <li><a href="https://linkedin.com/in/moises-perez" target="_blank" rel="noopener">linkedin.com/in/moises-perez</a></li>
+          <li><a href="https://github.com/moisesPAello" target="_blank" rel="noopener">github.com/moisesPAello</a></li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year">2026</span> Moisés Pérez Aello · Hermosillo, Sonora, Mexico</p>
+      <p class="site-footer__note">Built with semantic HTML, CSS &amp; a little JavaScript. No frameworks.</p>
+    </div>
+  </footer>
+
+  <script src="scripts/main.js" defer></script>
+</body>
+</html>

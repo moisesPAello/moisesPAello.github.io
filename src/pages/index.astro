@@ -14,7 +14,7 @@ const skillGroups = [
 ];
 
 // Set to true once public/Moises-Perez-CV.pdf exists.
-const showCv = false;
+const showCv = true;
 ---
 
 <Layout>
@@ -77,8 +77,26 @@ const showCv = false;
               Email
             </a>
             {showCv && (
-              <a class="btn btn--ghost" href="/Moises-Perez-CV.pdf" target="_blank" rel="noopener">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" /><path d="M7 10l5 5 5-5" /><path d="M12 15V3" /></svg>
+              <a
+                class="btn btn--ghost"
+                href="/Moises-Perez-CV.pdf"
+                download="Moises-Perez-CV.pdf"
+              >
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                >
+                  <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+                  <path d="M7 10l5 5 5-5" />
+                  <path d="M12 15V3" />
+                </svg>
                 CV.pdf
               </a>
             )}

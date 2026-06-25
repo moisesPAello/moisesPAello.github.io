@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" role="img" aria-label="MP">
+  <rect width="32" height="32" rx="6" fill="#faf8f2"/>
+  <rect x="1.5" y="1.5" width="29" height="29" rx="4.5" fill="none" stroke="#211f1a" stroke-width="1.5"/>
+  <rect x="4" y="4" width="24" height="3" rx="1" fill="#0f7a4e"/>
+  <text x="16" y="23" font-family="ui-monospace, Menlo, monospace" font-size="13" font-weight="700" fill="#211f1a" text-anchor="middle">MP</text>
+</svg>
